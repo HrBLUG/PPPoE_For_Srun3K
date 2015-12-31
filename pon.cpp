@@ -244,7 +244,7 @@ int main(int argc,char *argv[])
 #if (WINVER >= 0x600)
 				lpRasEnt->dwfNetProtocols = RASNP_Ip | RASNP_Ipv6;//IPV6 Is Enabled Default.
 #else
-				lpRasEnt->dwfNetProtocols = RASNP_Ip:
+				lpRasEnt->dwfNetProtocols = RASNP_Ip;
 #endif
 				if (RasSetEntryProperties(NULL, lpszEntry, lpRasEnt, lpdwEntryInfoSize, NULL, NULL) != ERROR_SUCCESS)
 				{
